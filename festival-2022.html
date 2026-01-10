@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>I Фестиваль 2022 - Детский кинофестиваль</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: #2575fc;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-content {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #6a11cb;
+            border-radius: 50%;
+            top: 20px;
+            z-index: 1;
+        }
+        .timeline-item:nth-child(odd)::after {
+            right: -10px;
+        }
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+        @media (max-width: 768px) {
+            .timeline::after { left: 31px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-item:nth-child(even) { left: 0; }
+            .timeline-item::after { left: 21px !important; }
+        }
+        
+        .founders {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        .founder-quote {
+            font-style: italic;
+            border-left: 4px solid #6a11cb;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-with-logo">
+            <img src="images/logo.png" alt="Эмблема" class="festival-logo">
+            <div class="festival-title">
+                <h1>I Московский международный детский кинофестиваль
+                    <span class="year-header">2022</span>
+                </h1>
+                <p>"Детский глобус - МИР глазами детей"</p>
+                <p>Первый фестиваль • Декабрь 2022 года</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="main-nav">
+        <a href="index.html">IV 2025</a>
+        <a href="festival-2024.html">III 2024</a>
+        <a href="festival-2023.html">II 2023</a>
+        <a href="festival-2022.html" class="active">I 2022</a>
+        <a href="about.html">О проекте</a>
+    </nav>
+    
+    <main>
+        <section class="content">
+            <h2>Первый международный детский кинофестиваль</h2>
+            
+            <div class="festival-intro">
+                <p>Первый Московский международный детский кинофестиваль "Детский глобус - МИР глазами детей" состоялся в декабре 2022 года. Это было историческое событие, положившее начало ежегодной традиции.</p>
+                
+                <div class="founders">
+                    <h3>👑 Основатели фестиваля</h3>
+                    <div class="founder-quote">
+                        "Наша цель - создать платформу, где детские голоса будут услышаны через искусство кино. Каждый ребенок имеет право рассказать свою историю."
+                        <div style="text-align: right; margin-top: 10px;"><strong>— Юлиана Борисова, основатель фестиваля</strong></div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>История создания</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Январь 2022</h4>
+                        <p>Идея создания международного детского кинофестиваля. Формирование инициативной группы.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Март 2022</h4>
+                        <p>Разработка концепции и положения фестиваля. Создание официального сайта.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Май 2022</h4>
+                        <p>Начало приема заявок. Поступило более 200 заявок из 15 стран.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Сентябрь 2022</h4>
+                        <p>Формирование жюри. Отбор 50 фильмов для конкурсной программы.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Декабрь 2022</h4>
+                        <p>Проведение фестиваля. Торжественное открытие в кинотеатре "Каро Атриум".</p>
+                    </div>
+                </div>
+            </div>
+<section id="winners-2022" class="content winners-2022-section">
+    <h2>🏆 Победители I фестиваля 2022</h2>
+    
+    <div class="winners-intro">
+        <p>По итогам первого Московского международного детского кинофестиваля были определены победители в различных номинациях. Жюри отметило высокий уровень представленных работ.</p>
+    </div>
+    
+    <!-- Основные номинации -->
+    <div class="main-winners">
+        <div class="main-winner-card grand-prix-2022">
+            <div class="winner-trophy">🏅</div>
+            <div class="winner-main-content">
+                <h3>ГРАН-ПРИ фестиваля</h3>
+                <div class="winner-film-title">«Легенды Орленка»</div>
+                <div class="winner-director">Режиссер <strong>Ольга Беляева</strong></div>
+                <div class="winner-description">Главный приз первого международного детского кинофестиваля</div>
+            </div>
+        </div>
+        
+        <div class="winner-category">
+            <h4>🎬 Основные номинации</h4>
+            <div class="category-winners">
+                <div class="category-winner">
+                    <div class="category-name">Лучший игровой фильм</div>
+                    <div class="winner-info">
+                        <span class="film-title">«Яблоня»</span>
+                        <span class="director">Режиссер Ольга Ажнакина</span>
+                    </div>
+                </div>
+                
+                <div class="category-winner">
+                    <div class="category-name">Лучший документальный фильм</div>
+                    <div class="winner-info">
+                        <span class="film-title">«Отец и сыновья»</span>
+                        <span class="director">Режиссер Алексей Бурыкин</span>
+                    </div>
+                </div>
+                
+                <div class="category-winner">
+                    <div class="category-name">Лучший короткометражный фильм</div>
+                    <div class="winner-info">
+                        <span class="film-title">«Качели»</span>
+                        <span class="director">Режиссер Ева Серебренникова</span>
+                    </div>
+                </div>
+                
+                <div class="category-winner">
+                    <div class="category-name">Лучший фильм-сказка</div>
+                    <div class="winner-info">
+                        <span class="film-title">«ФИНИСТ ЯСНЫЙ СОКОЛ»</span>
+                        <span class="director">Режиссер Жанна Саханен</span>
+                        <span class="additional-winner">
+                            <span class="film-title">«Новогодняя история»</span>
+                            <span class="director">Режиссер Алексей Алферов</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="category-winner">
+                    <div class="category-name">Лучший фильм детской киностудии</div>
+                    <div class="winner-info">
+                        <span class="film-title">«Всё дальше»</span>
+                        <span class="director">Киностудия «Крылья»</span>
+                        <span class="director">Режиссер Екатерина Бабченко</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Специальные призы -->
+    <div class="special-awards-2022">
+        <h3>🎖️ Специальные призы и награды</h3>
+        
+        <div class="awards-grid">
+            <div class="award-card">
+                <div class="award-icon">⭐</div>
+                <div class="award-content">
+                    <h5>Специальный приз жюри</h5>
+                    <div class="award-film">«Декабристы»</div>
+                    <div class="award-details">Режиссер Лариса Хамина, Канская колония</div>
+                </div>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">🎭</div>
+                <div class="award-content">
+                    <h5>Юная актриса</h5>
+                    <div class="award-recipient">Александра Макарычева</div>
+                    <div class="award-details">Фильм «Папа», режиссер Никита Транцеев</div>
+                </div>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">🎭</div>
+                <div class="award-content">
+                    <h5>Юный актер</h5>
+                    <div class="award-recipient">Андрей Андреев</div>
+                    <div class="award-details">Фильм «Яблоня», режиссер Ольга Ажнакина</div>
+                </div>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">👗</div>
+                <div class="award-content">
+                    <h5>Лучшие костюмы</h5>
+                    <div class="award-film">«ФИНИСТ ЯСНЫЙ СОКОЛ»</div>
+                    <div class="award-details">Режиссер Жанна Саханен</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Медаль и призы -->
+        <div class="medal-section">
+            <div class="medal-card">
+                <div class="medal-icon">🥇</div>
+                <div class="medal-content">
+                    <h5>Медаль Бориса Грачевского</h5>
+                    <div class="medal-from">от Екатерины Белоцерковской</div>
+                    <div class="medal-film">Документальный фильм «Отец и сыновья»</div>
+                    <div class="medal-director">Режиссер Алексей Бурыкин</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Специальные призы фестиваля -->
+        <div class="festival-special-prizes">
+            <h5>Специальные призы фестиваля:</h5>
+            <div class="special-prize-list">
+                <div class="special-prize-item">
+                    <span class="prize-name">«Родительский контроль»</span>
+                    <span class="prize-film">«Эффект Домино»</span>
+                    <span class="prize-director">Режиссер Евгений Терновых</span>
+                </div>
+                <div class="special-prize-item">
+                    <span class="prize-name">«Родительский комитет»</span>
+                    <span class="prize-film">«Зови меня «Дрозд»</span>
+                    <span class="prize-director">Режиссер Павел Мирзоев</span>
+                </div>
+                <div class="special-prize-item">
+                    <span class="prize-name">«Доверие»</span>
+                    <span class="prize-film">«Навстречу мечте»</span>
+                    <span class="prize-director">Режиссер Ирина Гобозашвили</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Призы и сертификаты -->
+        <div class="prizes-certificates">
+            <h5>Призы и сертификаты:</h5>
+            <ul class="prizes-list">
+                <li>Приз от Екатерины Белоцерковской – сувениры журнала Ералаш для Канской колонии и героев фильма «Отец и сыновья»</li>
+                <li>Призы от IGlass</li>
+                <li>Сертификат от студии «GRAF» – «Монеточка» – Элизабетта Бальби</li>
+                <li>Сертификат от студии «GRAF» – «3 добрых дела» – студия Переславль</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="winners-footer">
+        <p>🎉 <strong>Поздравляем всех победителей и участников первого фестиваля!</strong> Ваши работы стали важной частью истории детского кино.</p>
+    </div>
+</section>
+            <h3>Ключевые достижения I фестиваля</h3>
+            <div class="achievements">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌍</div>
+                    <h4>Международное участие</h4>
+                    <p>3 страны-участницы</p>
+                    <p>Более 200 заявок</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎥</div>
+                    <h4>Фильмы</h4>
+                    <p>50 фильмов в программе</p>
+                    <p>Жанры: игровое, документальное, анимация</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h4>Номинации</h4>
+                    <p>12 основных номинаций</p>
+                    <p>5 специальных призов</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">👥</div>
+                    <h4>Участники</h4>
+                    <p>300+ юных кинематографистов</p>
+                    <p>30 мастер-классов</p>
+                </div>
+            </div>
+            
+            <h3>Жюри первого фестиваля</h3>
+			<div class="jury-photos-2022">
+    <h4>📸 Фото жюри 2022 года</h4>
+    <div class="photos-grid">
+        <img src="images/Владимир торс-ts1660464408.jpg" alt="Жюри 2022" class="jury-photo">
+		<img src="images/Юрий-ts1660463932.jpg" alt="Жюри 2022" class="jury-photo">
+		<img src="images/Белоцерк-ts1660464215.jpg" alt="Жюри 2022" class="jury-photo">
+		<img src="images/Герман-ts1660464727.jpg" alt="Жюри 2022" class="jury-photo">
+        <img src="images/Герман и медаль-ts1683383773.png" alt="Обсуждение фильмов" class="jury-photo">
+        <img src="images/2026-01-10_18-24-23.png" alt="Церемония награждения" class="jury-photo">
+		<img src="images/221B3240-ts1683394251.jpg" alt="Церемония награждения" class="jury-photo">
+		<img src="images/221B3278-ts1683393434.jpg" alt="Церемония награждения" class="jury-photo">
+    </div>
+</div>
+            <div class="jury-list">
+                <div class="jury-member">
+                    <h4>Владимир Торсуев</h4>
+                    <p>Актер, председатель жюри</p>
+                </div>
+                <div class="jury-member">
+                    <h4>Юрий Торсуев</h4>
+                    <p>Актер</p>
+                </div>
+                <div class="jury-member">
+                    <h4>Екатерина Белоцерковская</h4>
+                    <p>Актриса, певица</p>
+                </div>
+                <div class="jury-member">
+                    <h4>Руслан Герман</h4>
+                    <p>Актер, режиссер</p>
+                </div>
+            </div>
+            
+            <div class="legacy">
+                <h3>Наследие I фестиваля</h3>
+                <p>Первый фестиваль заложил основы для ежегодного проведения мероприятия. Были установлены стандарты отбора фильмов, сформирована команда организаторов и созданы партнерские отношения с культурными учреждениями.</p>
+                
+                <p>Фестиваль 2022 года получил положительные отзывы от участников, зрителей и профессионального сообщества, что позволило сделать его ежегодным событием.</p>
+            </div>
+        </section>
+        
+        <div class="festival-navigation">
+            <a href="festival-2023.html" class="nav-prev">← II Фестиваль 2023</a>
+            <div style="text-align: center; color: #666; font-style: italic;">
+                Первый фестиваль • Начало традиции
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2022 I Московский международный детский кинофестиваль</p>
+        <div class="footer-nav">
+            <a href="index.html">IV 2025</a> |
+            <a href="festival-2024.html">III 2024</a> |
+            <a href="festival-2023.html">II 2023</a> |
+            <a href="festival-2022.html">I 2022</a>
+        </div>
+        <p style="margin-top: 15px; font-size: 0.9em; color: #888;">
+            Историческое событие • Начало ежегодной традиции
+        </p>
+    </footer>
+</body>
+</html>
