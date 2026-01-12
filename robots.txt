@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: detkinofest.ru
+Sitemap: https://detkinofest.ru/sitemap.xml
